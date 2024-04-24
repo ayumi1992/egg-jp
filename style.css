@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+/* 共通部分 
+------------------------------*/
+html {
+    font-size: 100%;
+}
+body {
+    font-family: "Shippori Mincho B1", serif;
+        font-weight: 700;
+        font-style: normal;
+        line-height: 1.7;;
+        color: rgb(245, 238, 232);
+      }
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+
+/* HEADER
+-----------------------------*/
+.logo {
+    width: 210px;
+    margin-top: 14px;
+}
+
+.main-nav {
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 34px;
+    list-style: none;
+}
+.main-nav li {
+    margin-left: 36px;
+}
+.margin-nav a {
+    color: rgb(234, 231, 229);
+}
+.main-nav a:hover {
+    color: #0bd;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/* HOME 
+-----------------------------*/
+.home-content {
+    text-align: center;
+    margin-top: 10%;
+}
+.home-content p {
+    font-size: 1.125rem;
+    margin: 10px 0 42px;
+}
+
+/* 見出し　*/
+.page-title {
+    font-size: 5rem;
+    font-family: 'philosopher', serif;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+/*ボタン*/
+.button {
+    font-size:1.375rem;
+    background: #0bd;
+    color: #fff;
+    border-radius: 5px;
+    padding: 18px 32px;
+}
+.button:hover {
+    background: #0090aa;
+}
+
+/*大きな背景*/
+
+.big-bg {
+    background-size: cover;
+    background-position: center top;
+}
+
+#home {
+    background-image: url(https://attachment.outlook.live.net/owa/MSA%3Aayumi1992.5%40outlook.jp/service.svc/s/GetAttachmentThumbnail?id=AQMkADAwATMwMAItNmJjZC1jODgAYS0wMAItMDAKAEYAAAPH9wlZI3HdRoc9LoOsuAgiBwBk%2FTbYbr3wSIZasp7RSIKqAAACAQwAAABk%2FTbYbr3wSIZasp7RSIKqAAAAUnfgMgAAAAESABAAXfuQ51Qx10Kaem3adqLZ%2Fg%3D%3D&thumbnailType=2&isc=1&token=eyJhbGciOiJSUzI1NiIsImtpZCI6IkU1RDJGMEY4REE5M0I2NzA5QzQzQTlFOEE2MTQzQzAzRDYyRjlBODAiLCJ0eXAiOiJKV1QiLCJ4NXQiOiI1ZEx3LU5xVHRuQ2NRNm5vcGhROEE5WXZtb0EifQ.eyJvcmlnaW4iOiJodHRwczovL291dGxvb2sub2ZmaWNlLmNvbSIsInVjIjoiMWIyMGZiZThlZGRiNDA3MTg4ZjJmOTlkYTNjNjk3Y2EiLCJ2ZXIiOiJFeGNoYW5nZS5DYWxsYmFjay5WMSIsImFwcGN0eHNlbmRlciI6Ik93YURvd25sb2FkQDg0ZGY5ZTdmLWU5ZjYtNDBhZi1iNDM1LWFhYWFhYWFhYWFhYSIsImlzc3JpbmciOiJXVyIsImFwcGN0eCI6IntcIm1zZXhjaHByb3RcIjpcIm93YVwiLFwicHVpZFwiOlwiODQ0NDI2NzM4NzgwMjk4XCIsXCJzY29wZVwiOlwiT3dhRG93bmxvYWRcIixcIm9pZFwiOlwiMDAwMzAwMDAtNmJjZC1jODhhLTAwMDAtMDAwMDAwMDAwMDAwXCIsXCJwcmltYXJ5c2lkXCI6XCJTLTEtMjgyNy0xOTY2MDgtMTgwODY0ODMzMFwifSIsIm5iZiI6MTcxMzg0MDUxMiwiZXhwIjoxNzEzODQwODEyLCJpc3MiOiIwMDAwMDAwMi0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDBAODRkZjllN2YtZTlmNi00MGFmLWI0MzUtYWFhYWFhYWFhYWFhIiwiYXVkIjoiMDAwMDAwMDItMDAwMC0wZmYxLWNlMDAtMDAwMDAwMDAwMDAwL2F0dGFjaG1lbnQub3V0bG9vay5saXZlLm5ldEA4NGRmOWU3Zi1lOWY2LTQwYWYtYjQzNS1hYWFhYWFhYWFhYWEiLCJoYXBwIjoib3dhIn0.u8L7_-ONAVa3KRuvNjapMtS4RlHzBpygW5eRZ1KVr3AiE5rqAcYUfG4bn2nEhQ9k2L2LmE67HUrzMaNVbTkzjvRXf7HW21Zk-Erufy5KNGn5qYS-jHbCBrh2EvE4Srs-SCP8kCZ6CCxMh4rRPZo9zLnMEq3L56Nix3MhD8_bPff_qJvuDwhxkCTO8yrla4sRa7r_JvsZ1CDP2zaLXzk_WkZtBfH2TKPv1CnCGVP6s8zP3F5pViLYhIAZz4JA64Hql27CSc8IfUoN5Wm5o_72_oIspOphgKAZMwWYWm2ZEVpTgP_g32NebVX5fH3irDiVzO9H5IgldTK09L5KDr9WTA&X-OWA-CANARY=X-OWA-CANARY_cookie_is_null_or_empty&owa=outlook.office.com&scriptVer=20240412005.11&clientId=B99D9AEC4F1442F5A6F012826DC3D011&animation=true&persistenceId=ec5d4b63-a313-43c2-a38e-610643b57418/images/umi.jpg);
+    background-blend-mode: hard-light;
+    min-height: 100vh;
+}
+#home  .page-title {
+      text-transform: none;
+
+}
+
+/* NEWS
+---------------------------*/
+#news {
+    background-image: url(https://attachment.outlook.live.net/owa/MSA%3Aayumi1992.5%40outlook.jp/service.svc/s/GetAttachmentThumbnail?id=AQMkADAwATMwMAItNmJjZC1jODgAYS0wMAItMDAKAEYAAAPH9wlZI3HdRoc9LoOsuAgiBwBk%2FTbYbr3wSIZasp7RSIKqAAACAQwAAABk%2FTbYbr3wSIZasp7RSIKqAAAAUnfgLwAAAAESABAAkBivCIfpW0urFnr05RL%2Bnw%3D%3D&thumbnailType=2&isc=1&token=eyJhbGciOiJSUzI1NiIsImtpZCI6IkU1RDJGMEY4REE5M0I2NzA5QzQzQTlFOEE2MTQzQzAzRDYyRjlBODAiLCJ0eXAiOiJKV1QiLCJ4NXQiOiI1ZEx3LU5xVHRuQ2NRNm5vcGhROEE5WXZtb0EifQ.eyJvcmlnaW4iOiJodHRwczovL291dGxvb2sub2ZmaWNlLmNvbSIsInVjIjoiMWIyMGZiZThlZGRiNDA3MTg4ZjJmOTlkYTNjNjk3Y2EiLCJ2ZXIiOiJFeGNoYW5nZS5DYWxsYmFjay5WMSIsImFwcGN0eHNlbmRlciI6Ik93YURvd25sb2FkQDg0ZGY5ZTdmLWU5ZjYtNDBhZi1iNDM1LWFhYWFhYWFhYWFhYSIsImlzc3JpbmciOiJXVyIsImFwcGN0eCI6IntcIm1zZXhjaHByb3RcIjpcIm93YVwiLFwicHVpZFwiOlwiODQ0NDI2NzM4NzgwMjk4XCIsXCJzY29wZVwiOlwiT3dhRG93bmxvYWRcIixcIm9pZFwiOlwiMDAwMzAwMDAtNmJjZC1jODhhLTAwMDAtMDAwMDAwMDAwMDAwXCIsXCJwcmltYXJ5c2lkXCI6XCJTLTEtMjgyNy0xOTY2MDgtMTgwODY0ODMzMFwifSIsIm5iZiI6MTcxMzg0NzY5MywiZXhwIjoxNzEzODQ3OTkzLCJpc3MiOiIwMDAwMDAwMi0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDBAODRkZjllN2YtZTlmNi00MGFmLWI0MzUtYWFhYWFhYWFhYWFhIiwiYXVkIjoiMDAwMDAwMDItMDAwMC0wZmYxLWNlMDAtMDAwMDAwMDAwMDAwL2F0dGFjaG1lbnQub3V0bG9vay5saXZlLm5ldEA4NGRmOWU3Zi1lOWY2LTQwYWYtYjQzNS1hYWFhYWFhYWFhYWEiLCJoYXBwIjoib3dhIn0.skyxfPaUnBOSquxT_2bn89G-BgqWRCMYhhc40iiyGoIJmXFbK0hylJ6bVWe1BF26AdGmzJI8ZwR_8LnNbucTCBD68ogxLam9I3i5XiT430FRp1ZolkoOANK1XsdqO95T7OaxLTyOpTd6FqCp3LgSvkPht7uE3_pP1ebCgHCHRMQT8NGkhp0RmKYclsI64aWfyD2Osx75Fwb5drTBbIe_i5v4XPI3kfejSBmbV3TLE6ODXYVNBJKnT0hCKn482_pm0TgAriX7oUCPBOVu3apJnt0yKCdqI7U6C9td11Nqpu-GZ0bvOWo01EM28Hks8Ks9zoFL3GYX422SZkGm2RGEMw&X-OWA-CANARY=X-OWA-CANARY_cookie_is_null_or_empty&owa=outlook.office.com&scriptVer=20240412005.11&clientId=B99D9AEC4F1442F5A6F012826DC3D011&animation=true&persistenceId=ec5d4b63-a313-43c2-a38e-610643b57418/imases/aburana.jpg);
+    height: 270px;
+    margin-bottom: 40px;
+}
+#news .page-title {
+    text-align: center;
+}
